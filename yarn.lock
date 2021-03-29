@@ -2048,6 +2048,14 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@olehan/add.node@workspace:packages/add.node":
+  version: 0.0.0-use.local
+  resolution: "@olehan/add.node@workspace:packages/add.node"
+  dependencies:
+    node-gyp: ^7.1.2
+  languageName: unknown
+  linkType: soft
+
 "@olehan/next.go@workspace:.":
   version: 0.0.0-use.local
   resolution: "@olehan/next.go@workspace:."
@@ -7607,7 +7615,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"node-gyp@npm:^7.1.0, node-gyp@npm:latest":
+"node-gyp@npm:^7.1.0, node-gyp@npm:^7.1.2, node-gyp@npm:latest":
   version: 7.1.2
   resolution: "node-gyp@npm:7.1.2"
   dependencies:

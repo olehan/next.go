@@ -2,5 +2,11 @@
 POC of a **Next.js** project that uses **Golang** written code on the server using
 [node-gyp](https://github.com/nodejs/node-gyp) and [WASM](https://webassembly.org) on client.
 
+## Usage
+Compile node-gyp addon:
+```shell
+$ yarn packages/add.node compile
+```
+
 ## License
 [![olehan next.go license](https://img.shields.io/github/license/olehan/next.go?label=as%20always&color=informational)](LICENSE)

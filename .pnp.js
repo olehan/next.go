@@ -21,11 +21,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "@olehan/next.go",
         "reference": "workspace:."
+      },
+      {
+        "name": "@olehan/add.node",
+        "reference": "workspace:packages/add.node"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
+      ["@olehan/add.node", ["workspace:packages/add.node"]],
       ["@olehan/next.go", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -2656,6 +2661,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@octokit/openapi-types", "npm:6.0.0"]
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["@olehan/add.node", [
+        ["workspace:packages/add.node", {
+          "packageLocation": "./packages/add.node/",
+          "packageDependencies": [
+            ["@olehan/add.node", "workspace:packages/add.node"],
+            ["node-gyp", "npm:7.1.2"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["@olehan/next.go", [

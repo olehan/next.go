@@ -1,0 +1,68 @@
+{
+  "name": "@olehan/next.go",
+  "private": true,
+  "description": "POC of a Next.js project that uses Golang written code on server using node-gyp and WASM on client",
+  "homepage": "https://github.com/olehan/next.go#readme",
+  "bugs": {
+    "url": "https://github.com/olehan/next.go/issues",
+    "email": "alihan.arshabekov@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olehan/next.go.git"
+  },
+  "license": "MIT",
+  "author": "@olehan <alihan.arshabekov@gmail.com>",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "husky install",
+    "lint": "yarn eslint --max-warnings 0 packages",
+    "lint-staged": "yarn eslint --cache --max-warnings 0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional",
+      "@commitlint/config-lerna-scopes"
+    ]
+  },
+  "lint-staged": {
+    "packages/**/*.[jt]s?(x)": [
+      "yarn lint-staged"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "@azimutlabs/eslint-config"
+    ]
+  },
+  "eslintIgnore": [
+    "**/lib"
+  ],
+  "devDependencies": {
+    "@azimutlabs/eslint-config": "^0.9.0",
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "@commitlint/config-lerna-scopes": "^12.0.1",
+    "@types/jest": "^26.0.22",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.23.0",
+    "eslint-plugin-functional": "^3.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "lerna": "^4.0.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "react": "^17.0.2",
+    "typescript": "^4.2.3"
+  }
+}

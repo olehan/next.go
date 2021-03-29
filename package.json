@@ -19,7 +19,8 @@
   "scripts": {
     "postinstall": "husky install",
     "lint": "yarn eslint --max-warnings 0 packages",
-    "lint-staged": "yarn eslint --cache --max-warnings 0"
+    "lint-staged": "yarn eslint --cache --max-warnings 0",
+    "test": "yarn jest"
   },
   "commitlint": {
     "extends": [

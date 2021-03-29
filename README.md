@@ -8,11 +8,16 @@ POC of a Next.js project that uses Golang written code using
 | -------- | ----------- |
 | `node`   | `=14`       |
 | `go`     | `=1.16`     |
+| `tinygo`     | `=0.17`     |
 
 ## Usage
 Compile node-gyp addon:
 ```shell
 $ yarn packages/add.node compile
+```
+Compile wasm package:
+```shell
+$ yarn packages/add.wasm compile
 ```
 
 ## License

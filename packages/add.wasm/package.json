@@ -1,0 +1,6 @@
+{
+  "name": "@olehan/add.wasm",
+  "scripts": {
+    "compile": "tinygo build -target wasm -o ./add.wasm ./add.go"
+  }
+}

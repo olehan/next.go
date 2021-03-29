@@ -8,18 +8,18 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x]
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: yarn
-    - run: yarn lint
+      - uses: actions/checkout@v2
+      - name: Use Node.js =14
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Use Node.js =1.16.2
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.16.2'
+      - run: yarn
+      - run: yarn lint
+      - run: yarn packages/add.node compile
+      - run: yarn test

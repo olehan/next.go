@@ -1,5 +1,6 @@
 {
   "name": "@olehan/add.node",
+  "main": "build/Release/add.node",
   "scripts": {
     "compile": "yarn compile:go && yarn compile:configure && yarn compile:addon",
     "compile:addon": "yarn node-gyp build",

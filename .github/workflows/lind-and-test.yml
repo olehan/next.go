@@ -21,5 +21,6 @@ jobs:
           go-version: '1.16.2'
       - run: yarn
       - run: yarn lint
-      - run: yarn packages/add.node compile
+      - run: yarn compile
       - run: yarn test
+      - run: yarn

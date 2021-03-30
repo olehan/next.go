@@ -103,3 +103,9 @@ dist
 # IDE and Code editors
 .idea/
 .vscode/
+
+*.wasm
+*.a
+*.h
+
+build/

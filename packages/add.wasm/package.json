@@ -1,6 +1,10 @@
 {
   "name": "@olehan/add.wasm",
+  "version": "0.0.0",
+  "main": "add.wasm",
   "scripts": {
-    "compile": "tinygo build -target wasm -o ./add.wasm ./add.go"
+    "compile": "yarn compile:wasm && yarn compile:move",
+    "compile:move": "mv ./add.wasm ../app/public/add.wasm",
+    "compile:wasm": "tinygo build -target wasm -o ./add.wasm ./add.go"
   }
 }

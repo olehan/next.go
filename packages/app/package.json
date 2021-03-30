@@ -1,0 +1,18 @@
+{
+  "name": "@olehan/app",
+  "scripts": {
+    "build": "yarn next build",
+    "start": "yarn next start"
+  },
+  "dependencies": {
+    "@olehan/add.node": "^0.0.0",
+    "@olehan/add.wasm": "^0.0.0",
+    "next": "^10.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "node-loader": "^1.0.2",
+    "webpack": "^5.28.0"
+  }
+}

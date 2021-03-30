@@ -39,10 +39,15 @@
   "eslintConfig": {
     "extends": [
       "@azimutlabs/eslint-config"
-    ]
+    ],
+    "rules": {
+      "no-undef": "off",
+      "no-console": "off",
+      "react/jsx-no-literals": "off"
+    }
   },
   "eslintIgnore": [
-    "**/lib"
+    "**/wasm_exec.js"
   ],
   "devDependencies": {
     "@azimutlabs/eslint-config": "^0.9.0",

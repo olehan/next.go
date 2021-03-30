@@ -1,4 +1,4 @@
-import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 
 const WasmComponent = dynamic({
@@ -7,7 +7,7 @@ const WasmComponent = dynamic({
     const go = new Go();
 
     const addWasm = await fetch('/add.wasm');
-    const addWasmBytes = await addWasm.arrayBuffer()
+    const addWasmBytes = await addWasm.arrayBuffer();
     const wasm = await WebAssembly.instantiate(addWasmBytes, go.importObject);
 
     go.run(wasm.instance);
@@ -20,7 +20,7 @@ const WasmComponent = dynamic({
       return sum;
     };
   },
-})
+});
 
 export const HomePage = ({ sum }) => {
   const router = useRouter();
@@ -28,8 +28,12 @@ export const HomePage = ({ sum }) => {
 
   return (
     <div>
-      <h1>Change queries <code>a</code> and <code>b</code> to see changes</h1>
-      <h3>Sum from add.wasm: <WasmComponent a={a} b={b} /></h3>
+      <h1>
+        Change queries <code>a</code> and <code>b</code> to see changes
+      </h1>
+      <h3>
+        Sum from add.wasm: <WasmComponent a={a} b={b} />
+      </h3>
       <h3>Sum from add.node: {sum}</h3>
     </div>
   );

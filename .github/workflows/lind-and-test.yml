@@ -23,4 +23,3 @@ jobs:
       - run: yarn lint
       - run: yarn compile
       - run: yarn test
-      - run: yarn

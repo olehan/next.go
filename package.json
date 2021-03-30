@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "build": "yarn packages/app build",
-    "compile": "lerna run compile --parallel",
+    "compile": "yarn lerna run compile --parallel",
     "postinstall": "husky install",
     "lint": "yarn eslint --max-warnings 0 packages",
     "lint-staged": "yarn eslint --cache --max-warnings 0",

@@ -19,6 +19,11 @@ jobs:
         uses: actions/setup-go@v2
         with:
           go-version: '1.16.2'
+      # Install `tinygo`
+      - run: wget https://github.com/tinygo-org/tinygo/releases/download/v0.17.0/tinygo_0.17.0_amd64.deb
+      - run: sudo dpkg -i tinygo_0.17.0_amd64.deb
+      - run: export PATH=$PATH:/usr/local/tinygo/bin
+
       - run: yarn
       - run: yarn lint
       - run: yarn compile

@@ -45,7 +45,6 @@
       "no-undef": "off",
       "no-console": "off",
       "react/jsx-no-literals": "off",
-      "jest/require-top-level-describe": "off",
       "jest/expect-expect": "off"
     }
   },

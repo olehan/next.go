@@ -1,5 +1,5 @@
-context('HomePage', () => {
-  test('should display correct sum of two queries', () => {
+describe('HomePage', () => {
+  it('should display correct sum of two queries', () => {
     const num1 = 2352524;
     const num2 = 3463542;
 

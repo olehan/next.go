@@ -23,7 +23,8 @@
     "lint": "yarn eslint --max-warnings 0 packages",
     "lint-staged": "yarn eslint --cache --max-warnings 0",
     "start": "yarn packages/app start",
-    "test": "yarn jest"
+    "test:unit": "yarn jest",
+    "test:e2e": "yarn packages/app test"
   },
   "commitlint": {
     "extends": [
@@ -43,7 +44,9 @@
     "rules": {
       "no-undef": "off",
       "no-console": "off",
-      "react/jsx-no-literals": "off"
+      "react/jsx-no-literals": "off",
+      "jest/require-top-level-describe": "off",
+      "jest/expect-expect": "off"
     }
   },
   "eslintIgnore": [

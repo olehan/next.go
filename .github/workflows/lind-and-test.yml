@@ -15,11 +15,14 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
-      - name: Use Node.js =1.16.2
+      - name: Use Golang =1.16.2
         uses: actions/setup-go@v2
         with:
           go-version: '1.16.2'
       - run: yarn
       - run: yarn lint
       - run: yarn compile
-      - run: yarn test
+      - run: yarn test:unit
+      - run: yarn build
+      - run: yarn start &
+      - run: yarn test:e2e

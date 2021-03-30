@@ -32,9 +32,15 @@ export const HomePage = ({ sum }) => {
         Change queries <code>a</code> and <code>b</code> to see changes
       </h1>
       <h3>
-        Sum from add.wasm: <WasmComponent a={a} b={b} />
+        Sum from add.wasm:
+        <strong className="add-wasm">
+          <WasmComponent a={a} b={b} />
+        </strong>
       </h3>
-      <h3>Sum from add.node: {sum}</h3>
+      <h3>
+        Sum from add.node:
+        <strong className="add-node">{sum}</strong>
+      </h3>
     </div>
   );
 };

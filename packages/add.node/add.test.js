@@ -2,11 +2,11 @@ describe('add', () => {
   it('should run importing node-gyp addon', () => {
     const add = require('./build/Release/add');
 
-    const sum1 = 23525;
-    const sum2 = 64532;
+    const num1 = 23525;
+    const num2 = 64532;
 
-    const expectedSum = sum1 + sum2;
+    const expectedSum = num1 + num2;
 
-    expect(add.add(sum1, sum2)).toBe(expectedSum);
+    expect(add.add(num1, num2)).toBe(expectedSum);
   });
 });

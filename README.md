@@ -6,18 +6,35 @@ POC of a Next.js project that uses Golang written code using
 ## Prerequisites
 | **Tool** | **Version** |
 | -------- | ----------- |
-| `node`   | `=14`       |
+| `yarn`   | `>1.22`     |
+| `node`   | `>12`       |
 | `go`     | `=1.16`     |
-| `tinygo`     | `=0.17`     |
+| `tinygo` | `=0.17`     |
 
 ## Usage
-Compile node-gyp addon:
+Install dependencies:
 ```shell
-$ yarn packages/add.node compile
+$ yarn
 ```
-Compile wasm package:
+Compile [**add.wasm**](packages/add.wasm) and [**add.node**](packages/add.node) packages:
 ```shell
-$ yarn packages/add.wasm compile
+$ yarn compile
+```
+You can run **unit** tests to see if everything compiled fine:
+```shell
+$ yarn test:unit
+```
+Build the Next.js application:
+```shell
+$ yarn build
+```
+Start production version of the application:
+```shell
+$ yarn start
+```
+Finally, run **e2e** tests, or check the http://localhost:3000 yourself:
+```shell
+$ yarn test:e2e
 ```
 
 ## License

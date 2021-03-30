@@ -56,7 +56,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:12.1.0"],
             ["@commitlint/config-conventional", "npm:12.1.0"],
             ["@commitlint/config-lerna-scopes", "virtual:36d8c8394bfe2162df0c7f077ca6b22117a376d0dbef808e8196bf4b17d67342b3b56088a4aa6a4e357fbcf255dbdc2151bad8f95aff3e2826b64bcfe3f2db4d#npm:12.1.0"],
-            ["@types/jest", "npm:26.0.22"],
             ["@typescript-eslint/eslint-plugin", "virtual:36d8c8394bfe2162df0c7f077ca6b22117a376d0dbef808e8196bf4b17d67342b3b56088a4aa6a4e357fbcf255dbdc2151bad8f95aff3e2826b64bcfe3f2db4d#npm:4.19.0"],
             ["@typescript-eslint/parser", "virtual:36d8c8394bfe2162df0c7f077ca6b22117a376d0dbef808e8196bf4b17d67342b3b56088a4aa6a4e357fbcf255dbdc2151bad8f95aff3e2826b64bcfe3f2db4d#npm:4.19.0"],
             ["eslint", "npm:7.23.0"],
@@ -2962,6 +2961,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/add.node/",
           "packageDependencies": [
             ["@olehan/add.node", "workspace:packages/add.node"],
+            ["jest", "npm:26.6.3"],
             ["node-gyp", "npm:7.1.2"]
           ],
           "linkType": "SOFT",
@@ -3002,7 +3002,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:12.1.0"],
             ["@commitlint/config-conventional", "npm:12.1.0"],
             ["@commitlint/config-lerna-scopes", "virtual:36d8c8394bfe2162df0c7f077ca6b22117a376d0dbef808e8196bf4b17d67342b3b56088a4aa6a4e357fbcf255dbdc2151bad8f95aff3e2826b64bcfe3f2db4d#npm:12.1.0"],
-            ["@types/jest", "npm:26.0.22"],
             ["@typescript-eslint/eslint-plugin", "virtual:36d8c8394bfe2162df0c7f077ca6b22117a376d0dbef808e8196bf4b17d67342b3b56088a4aa6a4e357fbcf255dbdc2151bad8f95aff3e2826b64bcfe3f2db4d#npm:4.19.0"],
             ["@typescript-eslint/parser", "virtual:36d8c8394bfe2162df0c7f077ca6b22117a376d0dbef808e8196bf4b17d67342b3b56088a4aa6a4e357fbcf255dbdc2151bad8f95aff3e2826b64bcfe3f2db4d#npm:4.19.0"],
             ["eslint", "npm:7.23.0"],
@@ -3214,17 +3213,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/istanbul-reports", "npm:3.0.0"],
             ["@types/istanbul-lib-report", "npm:3.0.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["@types/jest", [
-        ["npm:26.0.22", {
-          "packageLocation": "./.yarn/cache/@types-jest-npm-26.0.22-1621c2cb77-4c98ed0585.zip/node_modules/@types/jest/",
-          "packageDependencies": [
-            ["@types/jest", "npm:26.0.22"],
-            ["jest-diff", "npm:26.6.2"],
-            ["pretty-format", "npm:26.6.2"]
           ],
           "linkType": "HARD",
         }]

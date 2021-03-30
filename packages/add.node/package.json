@@ -6,9 +6,11 @@
     "compile": "yarn compile:go && yarn compile:configure && yarn compile:addon",
     "compile:addon": "yarn node-gyp build",
     "compile:configure": "yarn node-gyp configure",
-    "compile:go": "go build -o ./add.a -buildmode=c-archive ./add.go"
+    "compile:go": "go build -o ./add.a -buildmode=c-archive ./add.go",
+    "test": "yarn jest"
   },
   "devDependencies": {
+    "jest": "^26.6.3",
     "node-gyp": "^7.1.2"
   }
 }
